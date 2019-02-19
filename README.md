@@ -10,7 +10,7 @@ node -v
 npm -v
 
 Launching app:
-cd redux-cra
+cd react-redux-starter-kit
 
 Most or all of the dependencies are already in package.json,
 just do 
