@@ -10,7 +10,7 @@ node -v
 npm -v
 
 Launching app:
-cd react-redux-todo/redux-cra
+cd redux-cra
 
 Most or all of the dependencies are already in package.json,
 just do 
