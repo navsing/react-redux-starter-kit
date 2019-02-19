@@ -17,7 +17,7 @@ just do
 
 npm install
 
-If any package is missing, do 'npm install <package-name>'
+If any package is missing, do 'npm install package-name'
   
   
 Finally,
