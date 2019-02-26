@@ -13,6 +13,7 @@ import ButtonReference from './ButtonReference';
 const propTypes = {
   onButtonClickHandler: PropTypes.func.isRequired
 };
+
 const emptyList = Immutable.fromJS({
   task_id: 0,
   task_name: 'newValue'
@@ -55,7 +56,6 @@ class App extends Component {
                     <ButtonReference
                       label="ClickMe"
                       taskName={row.task_name}
-                      {/* I will send this as a prop to ButtonReference(Child)*/}
                       onButtonClickHandler={this.buttonClickHandler}
                     />
                   </div>

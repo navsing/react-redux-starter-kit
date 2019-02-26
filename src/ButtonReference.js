@@ -11,7 +11,7 @@ const propTypes = {
 class ButtonReference extends React.Component {
     //This is the handler for the button click event on Child.
     onButtonClickHandler = (newVal) => {
-        //This would call the click button handler on the Parent. 
+        //This would call the click button handler on the Parent.
         this.props.onButtonClickHandler(newVal);
     };
     render = () => {
