@@ -1,30 +1,21 @@
-export const onChangeTask = (index, taskObj) => {
-    return {
-        type: 'CHANGE_TASK',
-        payload: {
-            index: index,
-            taskObj: taskObj
-        }
-    };
+import actionTypes from '../constants/actionTypes';
+import {get} from '../util/ajax';
+
+export const fetchEventsData = () => {
+  return (dispatch) => {
+      return get('/api/getEvents', {json: false})
+        .then((response) => {
+            return response.body;
+        })
+        .then((payload) => {
+            dispatch(receiveEventsData(payload))
+        });
+  };
 };
 
-export const onDeleteTask = (taskObj) => {
+const receiveEventsData = (response) => {
     return {
-        type: 'DELETE_TASK',
-        payload: taskObj
-    };
-};
-
-export const onAddTask = (taskObj) => {
-    return {
-        type: 'ADD_TASK',
-        payload: taskObj
-    };
-};
-
-export const changeTaskContent = (newVal) => {
-    return {
-        type: 'CHANGE_CONTENT',
-        payload: newVal
+        type:    actionTypes.fetchEvents,
+        payload: response
     };
 };
