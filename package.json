@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "bluebird": "^3.5.5",
-    "express": "^4.17.1",
+    "express": "^4.22.1",
     "immutable": "^4.0.0-rc.12",
     "lodash": "^4.17.11",
     "react": "^16.8.2",
@@ -13,7 +13,7 @@
     "react-redux": "^6.0.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "react-scripts": "2.1.5",
+    "react-scripts": "5.0.1",
     "redux": "^4.0.1",
     "redux-devtools": "^3.5.0",
     "redux-devtools-extension": "^2.13.8",
