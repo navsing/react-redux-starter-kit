@@ -6,7 +6,7 @@
     "bluebird": "^3.5.5",
     "express": "^4.17.1",
     "immutable": "^4.0.0-rc.12",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.23",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-mdl": "^1.11.0",
